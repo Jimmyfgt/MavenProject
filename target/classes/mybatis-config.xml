@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<settings>
+		<!-- 开启下划线转驼峰 -->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+
+		<!-- 打开延迟加载 -->
+		<setting name="lazyLoadingEnabled" value="true" />
+		<setting name="aggressiveLazyLoading" value="false" />
+
+		<!-- 开启二级缓存 -->
+		<setting name="cacheEnabled" value="true" />
+	</settings>
+
+
+	<typeAliases>
+		<!-- 单个配置别名 -->
+		<!-- <typeAlias type="com.niit.entity.User" alias="u"/> -->
+		<!-- 批量配置别名 -->
+		<package name="com.niit.entity" />
+	</typeAliases>
+
+
+
+</configuration>
+
+
+
+
